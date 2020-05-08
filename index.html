@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="pt-3 text-center">
-                                Date Updated {data.Date} 
+                                Date Updated: <span id="date-statics">0</span>
                             </div>
                         </div>
                     </div>
@@ -34,9 +34,7 @@
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
                                 <div class="card-header">New Confirmed </div>
-                                <div class="card-body text-center">
-                                    { data.NewConfirmed }
-                                </div>
+                                <div id="new-confirmed" class="card-body text-center">0</div>
                             </div>
                         </div>
                         <div class="col-sm">
@@ -59,15 +57,13 @@
                     <div class="row">
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
-                                <div class="card-header">New Confirmed </div>
-                                <div class="card-body text-center">
-                                    { data.NewConfirmed }
-                                </div>
+                                <div class="card-header">Total Confirmed </div>                                
+                                <div id="total-confirmed" class="card-body text-center"></div>                                
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
-                                <div class="card-header">New Deaths </div>
+                                <div class="card-header">Total Deaths </div>
                                 <div class="card-body text-center">
                                     { data.NewDeaths }
                                 </div>
@@ -75,7 +71,7 @@
                         </div>
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
-                                <div class="card-header">New Recovered </div>
+                                <div class="card-header">Total Recovered </div>
                                 <div class="card-body text-center">
                                     { data.NewRecovered }
                                 </div>
@@ -90,18 +86,18 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Country</th>
-                            <th>NewConfirmed</th>
-                            <th>TotalConfirmed</th>
-                            <th>NewDeaths</th>
-                            <th>TotalDeaths</th>
-                            <th>NewRecovered</th>
-                            <th>TotalRecovered</th>
+                            <th class="text-center">Country</th>
+                            <th class="text-center">NewConfirmed</th>
+                            <th class="text-center">TotalConfirmed</th>
+                            <th class="text-center">NewDeaths</th>
+                            <th class="text-center">TotalDeaths</th>
+                            <th class="text-center">NewRecovered</th>
+                            <th class="text-center">TotalRecovered</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-center">0</td>
+                            <td class="text-center">Perú</td>
                             <td class="text-center">0</td>
                             <td class="text-center">0</td>
                             <td class="text-center">0</td>
@@ -110,7 +106,7 @@
                             <td class="text-center">0</td>
                         </tr>
                         <tr>
-                            <td class="text-center">0</td>
+                            <td class="text-center">Perú</td>
                             <td class="text-center">0</td>
                             <td class="text-center">0</td>
                             <td class="text-center">0</td>
@@ -123,8 +119,7 @@
             </div>
         
     </section> 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="module" src="/assets/index.js"></script>

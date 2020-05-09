@@ -34,22 +34,24 @@
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
                                 <div class="card-header">New Confirmed </div>
-                                <div id="new-confirmed" class="card-body text-center">0</div>
+                                <div class="card-body">
+                                    <div id="new-confirmed" class="text-center">0</div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
                                 <div class="card-header">New Deaths </div>
-                                <div class="card-body text-center">
-                                    { data.NewDeaths }
+                                <div class="card-body">
+                                    <div id="new-deaths" class="text-center">0</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
                                 <div class="card-header">New Recovered </div>
-                                <div class="card-body text-center">
-                                    { data.NewRecovered }
+                                <div class="card-body">
+                                    <div id="new-recovered" class="text-center">0</div>
                                 </div>
                             </div>
                         </div>
@@ -57,23 +59,25 @@
                     <div class="row">
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
-                                <div class="card-header">Total Confirmed </div>                                
-                                <div id="total-confirmed" class="card-body text-center"></div>                                
+                                <div class="card-header">Total Confirmed </div>   
+                                <div class="card-body">
+                                    <div id="total-confirmed" class="text-center">0</div>                                
+                                </div>                             
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
                                 <div class="card-header">Total Deaths </div>
-                                <div class="card-body text-center">
-                                    { data.NewDeaths }
+                                <div class="card-body">
+                                    <div id="total-deaths" class="text-center">0</div>                                
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="card mt-2 mb-2">
                                 <div class="card-header">Total Recovered </div>
-                                <div class="card-body text-center">
-                                    { data.NewRecovered }
+                                <div class="card-body">
+                                    <div id="total-recovered" class="text-center">0</div>                                
                                 </div>
                             </div>
                         </div>
@@ -82,46 +86,36 @@
             </div>
     </section>      
     <section id="statics">
-            <div class="col pt-5 pb-5">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th class="text-center">Country</th>
-                            <th class="text-center">NewConfirmed</th>
-                            <th class="text-center">TotalConfirmed</th>
-                            <th class="text-center">NewDeaths</th>
-                            <th class="text-center">TotalDeaths</th>
-                            <th class="text-center">NewRecovered</th>
-                            <th class="text-center">TotalRecovered</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center">Perú</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">Perú</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">0</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="container">
+            <div class="row">
+                <div class="col pt-5">
+                    <input id="buscar-input" type="text" class="form-control" onkeyup="globalData.searchData(this)" placeholder="Buscar" />
+                </div>
             </div>
-        
+            <div class="row">
+                <div class="col pt-3 pb-5">
+                    <table id="covid-table" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Country</th>
+                                <th class="text-center">NewConfirmed</th>
+                                <th class="text-center">TotalConfirmed</th>
+                                <th class="text-center">NewDeaths</th>
+                                <th class="text-center">TotalDeaths</th>
+                                <th class="text-center">NewRecovered</th>
+                                <th class="text-center">TotalRecovered</th>
+                            </tr>
+                        </thead>
+                        <tbody>                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </section> 
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="module" src="/assets/index.js"></script>
+    <script src="/assets/index.js"></script>
 </body>
 </html>

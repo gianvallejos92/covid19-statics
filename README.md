@@ -20,4 +20,4 @@ Just see the last statics and filter numbers by country.
 MIT
 
 ## Author Info
-Bch. Gian Vallejos - Software Engineer
+https://www.gvallejos.com

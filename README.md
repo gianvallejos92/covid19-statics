@@ -14,7 +14,7 @@ This project has been created to practice Js Promises.
 
 ## How to use
 Just see the last statics and filter numbers by country.
-![screenshot_01](assets/images/screenshot_01.png)
+![screenshot_01](screenshot_01.png)
 
 ## License
 MIT

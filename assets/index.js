@@ -8,4 +8,9 @@ $(document).ready(function(){
         e.preventDefault
         globalData.searchData()
     })
+
+    $('#btn-update').on('click', (e) => {
+        e.preventDefault
+        location.reload()
+    })
 })
